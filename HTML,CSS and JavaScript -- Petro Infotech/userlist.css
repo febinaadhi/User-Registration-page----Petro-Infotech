@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Yesteryear', cursive;
+    list-style: none;
+    font-size: 23px;
+}
+body
+{
+    background-color: #ecf0f3;
+    overflow: hidden;
+    
+}
+
+.Bg-UpdationForm
+{
+  
+  background-color:#ecf0f3;
+  width: 400px;
+  height:555px;
+  position: absolute;
+  left: 3%;
+  top: 7%;
+  border-radius: 153px;
+  text-align: center;
+  box-shadow:   -3px -3px 7px #ffffff,
+  3px 3px 5px #ceced1;
+
+}
+#updation-heading
+{
+    text-align: center;
+    font-size: 35px;
+    padding-top: 12px;
+    color: rgb(187, 81, 10);
+}
+label
+{
+   font-size: 23px;
+   line-height: 53px;
+   position: relative;
+   top: 20px;
+}
+input,select
+{
+    background-color:#ecf0f3;
+    box-shadow:   -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+    border-radius: 13px;
+    border-style: none;
+    position: relative;
+    top: 20px;
+    width: 223px;
+    height:36px
+}
+#submit
+{
+    box-shadow:   -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+    border-radius: 13px;
+    border-style: none;
+    width: 223px;
+    height:36px;
+    position: relative;
+    top:66px;
+    background-color: rgb(206, 74, 22);
+ 
+}
+.edit-design
+{
+    margin-left: 15px;
+}
+.delete-design
+{
+    position: relative;
+    left: 23px;
+}
+#get-data
+{   
+    background-color:#ecf0f3;
+    width: 199px;
+    height: 40px;
+    border-style: none;
+    border-radius: 13px;
+    position: absolute;
+    left: 800px;
+    top: 12px;
+    box-shadow:   -3px -3px 7px #ffffff,
+    3px 3px 5px #ceced1;
+    
+}

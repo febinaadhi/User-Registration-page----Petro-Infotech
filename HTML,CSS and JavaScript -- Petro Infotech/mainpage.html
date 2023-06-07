@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--link the bootstrap-->
+  
+    <!--font awsome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--link the css-->
+    <link rel="stylesheet" href="mainpage.css">
+
+
+</head>
+
+
+<body>
+  
+
+<!--link the javaScript-->
+   <script defer src="mainpage.js"></script>
+
+
+<!--header pane-->
+    <div id="header"><marquee style="font-size: 27px;">Welcome to Petro Infotech</marquee></div>
+ 
+<!--REGISTRATION FORM BG-->   
+      <div class="bg-registeration"id="bg-registeration">
+<!--form-->
+    <form  id="myForm"onsubmit="event.preventDefault(); return FORMVALIDATE();">
+        <input type="text"id="first-name"placeholder="First Name">
+        <input type="text"id="last-name"placeholder="Last Name">
+      <select name="gender"id="gender" >
+        <option value=""selected="selected">Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+      <select name="country"id="country">
+        <option value=""selected="selected">Country</option>
+        <option value="India">India</option>
+        <option value="America">America</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="Netherlands">Netherlands</option>
+        <option value="Spain">Spain</option>
+        <option value="Italy">Italy</option>
+      </select>
+     <div>
+     <input type="email"id="email"placeholder="Email">
+     <input type="text"id="username"placeholder="Username">
+     <input type="password"id="password"placeholder="Password">
+     </div>
+     <div>
+     <input type="password"id="c-password"placeholder="Confirm Password">
+     <input type="date"id="date"placeholder="Dob">
+     <input type="text"id="zipcode"placeholder="Zipcode">
+    </div>
+      <!--button-->
+      <div>
+       <button type="submit"value="submit"id="submit"style="background-color: #1b50ff;" onclick="SaveData();">Submit</button>
+       <button type="reset"value="reset"id="cancel"style="background-color: #ff2600;">Cancel</button>
+      </div>
+
+<!--profile icon code-->
+      <img src="/image/user (2).png"width="151"height="151"id="profile-pic">
+      <label for="input-file"id="upload"required>Upload</label>
+     <div class="profile">
+      <input type="file" accept="image/jpeg, image/png, image/jpg"id="input-file">
+     </div>  
+    
+</form>
+
+
+<!--popup suceessfully-->
+<div class="bg-popupsucessfully"id="bg-popupsucessfully">
+  <div class="sucess-icon"id="sucess-icon">
+     <img src="/image/sucess icon.png"width="73px" height="73px">
+  </div>
+  <h1 class="popup-message">Congratulation!</h1><br>
+  <p class="popup-message-1">your account has been successfully<br>created.</p>
+  <a><button type="button"id="ok-sucess"onclick="Closepopup();">Ok</button></a>
+</div>
+
+
+<!--aside code-->
+      <!--bars icon-->
+      <input type="checkbox"id="check"name="check">
+      <label class="button bars" for="check"><i class="fa-solid fa-bars"></i></label>
+
+      <div class="side-bar">
+      <div class="title"> 
+      <div class="logo">Petro Infotech</div>
+      <!--xmark icon-->
+          <label class="button cancel" for="check"><i class="fa-solid fa-xmark"></i></label>
+      </div>
+<!--side bar list-->
+      <ul>
+        <li><a href="userlist.html"><i class="fa-solid fa-elevator"style="color:rgba(35, 0, 116, 0.979)"></i>User list</a></li>
+        <li><a href="#"onclick="UserRegistration();"onchange="UserRegistrationremove();"><i class="fa-solid fa-id-card"style="color:rgba(3, 189, 142, 0.979)"></i>User Registration</a></li>
+        <li><a href="logout.html"><i class="fa-solid fa-right-from-bracket"style="color:red"></i>Logout</a></li>
+      </ul>
+<!--social media-->
+      <div class="media-icons">
+        <a href="https://www.instagram.com/cyberparkkerala/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/petroinfotech"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://m.facebook.com/people/PetroInfotech-Private-Limited/100065069410596/"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://youtu.be/uBopr7n8DhM"><i class="fa-brands fa-youtube"></i></i></a>
+      </div>
+    </div>
+
+</body>
+</html>

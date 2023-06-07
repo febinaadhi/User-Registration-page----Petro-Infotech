@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Yesteryear', cursive;
+    list-style: none;
+}
+body
+{
+    background-color: #ecf0f3;
+    overflow: hidden;
+}
+.Logout-bg
+{ 
+   animation-name: example;
+   animation-duration: 2s;  
+   animation-fill-mode: forwards;
+   background-color: #000000;
+   width: 423px;
+   height: 223px;
+   border-radius: 50px;
+   box-shadow:   -3px -3px 7px #ffffff,
+                  3px 3px 5px #ceced1;
+   position: absolute;
+   left: 35%;
+   top: 7%
+}
+@keyframes example {
+    from {top: 0px;}
+    to {top: 200px; background-color: #ecf0f3}
+}
+.logout-message
+{      
+    text-align: center;
+    font-size: 22px;
+    line-height: 15px;
+    position: relative;
+    top:45px;
+}
+#logout-btn
+{
+    position: absolute;
+    left: 150px;
+    top:130px;
+    width: 123px;
+    height: 42px;
+    border-radius: 45px;
+    background-color: #15b437;
+    border-style: none;
+    font-size: 20px;
+}

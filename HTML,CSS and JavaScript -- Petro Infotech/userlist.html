@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="userlist.css">
+</head>
+<body> 
+  <script defer src="userlist.js"></script>
+    <style>
+        #customers {
+         
+          border-collapse: collapse;
+          width: 60%;
+          position: absolute;
+          left: 503px;
+          top:10%;
+        }
+        
+        #customers td, #customers th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+        
+        #customers tr:nth-child(even){background-color: #f2f2f2;}
+        
+        #customers tr:hover {background-color: #ddd;}
+        
+        #customers th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: center;
+          background-color: rgb(206, 74, 22);
+          color: white;
+        }   
+   </style>
+
+
+<form onsubmit="insertdata();" autocomplete="off"> 
+<div class="Bg-UpdationForm"id="Bg-UpdationForm">
+<p id="updation-heading">Updation Form</p>
+<label for="">Username</label><br>
+<input type="text"id="username"><br>
+<label for="">Password</label><br>
+<input type="password"id="password"><br>
+<label for="">Email</label><br>
+<input type="email"id="email"><br>
+<label for="">Country</label><br>
+<select name="country"id="country" style="font-size: 23px;">
+    <option value=""selected="selected">Country</option>
+    <option value="India">India</option>
+    <option value="America">America</option>
+    <option value="Switzerland">Switzerland</option>
+    <option value="Netherlands">Netherlands</option>
+    <option value="Spain">Spain</option>
+    <option value="Italy">Italy</option>
+  </select><br>
+  <button type="submit"id="submit">Submit</button>
+</div>
+</form>
+<button type="button"id="get-data" onclick="onFormSubmit();">Get Data</button>
+<td>
+<table id="customers">
+    <tr>
+      <th>Username</th>
+      <th>Password</th>
+      <th>Email</th>
+      <th>Country</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    
+  </table>
+</td> 
+</body>
+</html>
